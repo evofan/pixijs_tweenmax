@@ -1,0 +1,74 @@
+<!doctype html>
+
+<head>
+  <meta charset="utf-8">
+  <title>PixiJS + </title>
+</head>
+
+<script src="js/pixi.min.js"></script>
+<script src="lib/TweenMax.min.js"></script>
+
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  #container {
+    width: 90%;
+  }
+
+  button {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  div{
+    margin-bottom: 10px;
+  }
+
+  button {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+
+  p {
+    font-size: 90%;
+  }
+
+</style>
+
+<body>
+
+  <div id="conatiner">
+
+    <h1>PixiJS Test</h1>
+    <h2>GSAP</h2>
+    <h2>Apply a TweenMax Basic function to a sprite.</h2>
+    
+    <div id="canvas"></div>
+
+    <p>Control Leaf:</p>
+    <form>
+      <button type="button" onclick="btOnPlay()">&nbsp;Play&nbsp;</button>
+      <button type="button" onclick="btOnPause()">&nbsp;Pause&nbsp;</button>
+      <button type="button" onclick="btOnResume()">&nbsp;Resume&nbsp;</button>
+      <button type="button" onclick="btOnReverse()">&nbsp;Reverse&nbsp;</button>
+      <button type="button" onclick="btOnSeek(1)">&nbsp;Seek(1sec)&nbsp;</button>
+      <button type="button" onclick="btOnProgress(0.9)">&nbsp;Progress(90per)&nbsp;</button>
+      &nbsp;<br>
+      <button type="button" onclick="btOnTimeScale(2)">&nbsp;TimeScale(x2.0)&nbsp;</button>
+      <button type="button" onclick="btOnTimeScale(0.5)">&nbsp;TimeScale(x0.5)&nbsp;</button>
+      <button type="button" onclick="btOnKill()">&nbsp;Kill&nbsp;</button>
+      <button type="button" onclick="btOnRestart()">&nbsp;Restart&nbsp;</button>
+    </form>
+
+  </div>
+
+  <script src="./src/main.js"></script>
+
+
+</body>
+
+</html>
